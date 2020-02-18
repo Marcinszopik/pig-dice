@@ -15,8 +15,8 @@ PigDice.prototype.RollDie = function(min ,max) {
 }
 
 PigDice.prototype.roll = function() {
-    var dieOne = Math.ceil(dice.RollDie(1, 7));
-    var dieTwo = Math.ceil(dice.RollDie(1, 7));
+    var dieOne = Math.ceil(dice.RollDie(1, 6));
+    var dieTwo = Math.ceil(dice.RollDie(1, 6));
     console.log(dieOne, dieTwo);
     if (doubles) {
         $("button#hold").prop("disabled", false);
