@@ -1154,6 +1154,7 @@ pre code {
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
     max-width: 50%;
+    max-height: 600px;
   }
   .col-md-7 {
     -ms-flex: 0 0 58.333333%;
@@ -2461,7 +2462,7 @@ textarea.form-control {
   }
   .form-inline .form-group {
     display: -ms-flexbox;
-    display: flex;
+    display: block;
     -ms-flex: 0 0 auto;
     flex: 0 0 auto;
     -ms-flex-flow: row wrap;
@@ -2469,6 +2470,8 @@ textarea.form-control {
     -ms-flex-align: center;
     align-items: center;
     margin-bottom: 0;
+    margin-top: 10px;
+    
   }
   .form-inline .form-control {
     display: inline-block;
@@ -2484,7 +2487,7 @@ textarea.form-control {
   }
   .form-inline .form-check {
     display: -ms-flexbox;
-    display: flex;
+    display: block;
     -ms-flex-align: center;
     align-items: center;
     -ms-flex-pack: center;
@@ -2634,6 +2637,14 @@ fieldset:disabled a.btn {
   color: #fff;
   background-color: #28a745;
   border-color: #28a745;
+  width: 50px;
+}
+
+.btn-success-name {
+  color: #fff;
+  background-color: #28a745;
+  border-color: #28a745;
+  width: 150px;
 }
 
 .btn-success:hover {

@@ -12,6 +12,7 @@ div.container {
     font-weight: bold;
   }
 
+
 h1 {
     color: firebrick;
     font-size: 35pt;
@@ -21,10 +22,32 @@ text {
     font-weight: 1;
 }
 
-.playerOne {
+.play1 {
     color: orangered;
+    font-size: larger;
 }
 
-.playerTwo {
+.play2 {
     color: darkblue;
+    font-size: larger;
+}
+
+.threeColumns {
+    -webkit-column-count: 3;
+    -webkit-column-gap: 400px;
+    -moz-column-count: 3;
+    -moz-column-gap: 400px;
+    column-count: 3;
+    column-gap: 400px;
+    text-align: justify;
+
+}
+
+.threeColumns P {
+  margin-top: 5px;
+  width: 200px;
+}
+
+.results {
+    font-size: 20px;
 }

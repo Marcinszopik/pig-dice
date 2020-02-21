@@ -12,27 +12,49 @@
       <h1>Pig Dice</h1>
       <div class="col-md-6">
         <form id="pigDice">
+        <div class="threeColumns">
           <div class="form-group">
-            <label for="playerOne">Player One:</label>
+          <p>
+            <br>
+            <br>
+            <br>
+            <label for="playerOne" class="play1">Player One:</label>
             <input type="text" id="playerOne">
+            <div class="results">
+              <p><span id="scoreName1">Player 1</span>'s score:<span id="playerOneResults"></span></p>
+            </div>
+          <div class="form-group"> 
             <br>
-            <label for="playerTwo">Player Two:</label>
-            <input type="text" id="playerTwo">
             <br>
-            <button type="submit" id="names" class="btn btn-success">Submit</button>
+            <button type="submit" id="names" class="btn btn-success-name">Submit Names</button>
           </div>
-          <button type="button" id="roll" class="btn btn-success">Roll</button>
-          <button type="button" id="hold" class="btn btn-warning">Hold</button>
-        </form>
-        <br>
-        <div class="results">
+          <div class="form-group"> 
           <p>Rolled <span id="rolledResult"></span></p>
           <p><span id="currentPlayer">Current Score:</span><span id="currentScore"></span></p>
-          <p><span id="scoreName1">Player 1</span>'s score:<span id="playerOneResults"></span></p>
+          <p>
+          <br>
+          <button type="button" id="roll" class="btn btn-success">Roll</button>
+          <button type="button" id="hold" class="btn btn-warning">Hold</button>
+          <button type="button" id="reset" class="btn btn-primary hidden">Reset</button>
+          </p>
+          </div>
+        <div class="form-group">
+        <p>
+          <br>
+          <br>
+          <br>
+          <br>
+          <label for="playerTwo" class="play2">Player Two:</label>
+          <input type="text" id="playerTwo">
+          <br>
+        <div class="results">
           <p><span id="scoreName2">Player 2</span>'s score:<span id="playerTwoResults"></span></p>
         </div>
-        <button type="button" id="reset" class="btn btn-primary hidden">Reset</button>
+      </form>
+        </div>
+        </p>  
+        </div>
+        </div>
       </div>
-    </div>
   </body>
 </html>
